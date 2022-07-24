@@ -1,0 +1,201 @@
+.header {
+
+    @media (max-width: 540px) {
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            height: 119px;
+            background: #fff;
+            z-index: 100;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        height: 120px;
+
+        @media (max-width: $breakepoint_sm) {
+            flex-wrap: wrap;
+            padding-top: 30px;
+        }
+    }
+
+    &__btn {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+
+        @media (max-width: $breakepoint_md) {
+            display: none;
+        }
+    }
+
+    &__btn-menu {
+        display: none;
+
+        @media (max-width: $breakepoint_sm) {
+            display: block;
+            background-color: transparent;
+            border: none;
+            cursor: pointer;
+            order: -1;
+            position: relative;
+            z-index: 120;
+
+            span {
+                background-color: #000;
+                width: 33px;
+                height: 3px;
+                border-radius: 4px;
+                display: block;
+                margin: 6px 0;
+            }
+        }
+    }
+}
+
+.logo {
+    margin: 0 auto;
+
+    @media (max-width: $breakepoint_sm) {
+        order: -1;
+        margin: 0;
+        position: relative;
+        z-index: 12;
+        z-index: 120;
+    }
+}
+
+.menu {
+    padding-right: 15px;
+
+    @media (max-width: $breakepoint_sm) {
+        padding-right: 0;
+        width: 100%;
+        background-color: #fff;
+        position: relative;
+        z-index: 11;
+        text-align: center;
+        transform: translateY(-310px);
+        transition: all .5s;
+
+        &--open {
+            transform: translateY(27px);
+        }
+    }
+
+    &__list {
+        display: flex;
+
+        @media (max-width: $breakepoint_sm) {
+            display: block;
+        }
+    }
+
+    &__list-item {
+        padding-left: 35px;
+        padding-right: 45px;
+
+        @media (max-width: $breakepoint_md) {
+            padding-left: 25px;
+            padding-right: 25px;
+        }
+    }
+
+    &__list-link {
+        @extend %title-font;
+        color: rgba(54, 56, 56, 0.9033);
+        line-height: 22px;
+        transition: .3s ease-in-out;
+
+        &:hover {
+            color: rgba(54, 56, 56, 0.7);
+        }
+
+        @media (max-width: $breakepoint_sm) {
+            display: block;
+            padding: 15px 0;
+        }
+    }
+}
+
+.rightside-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    max-width: 694px;
+    width: 100%;
+    height: 915px;
+    background-color: #fff;
+    padding-top: 20px;
+    box-shadow: -2px 3px 17px 0px #000;
+    transition: all .6s;
+    z-index: 10;
+
+    @media (max-width: $breakepoint_md) {
+        display: none;
+    }
+
+    &.rightside-menu__close {
+        transform: translateX(500%);
+    }
+
+    &__close {
+        background-color: transparent;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        margin-left: 50px;
+        padding-top: 40px;
+        margin-bottom: 60px;
+    }
+
+    &__content {
+        text-align: center;
+        max-width: 485px;
+        margin: 0 auto;
+    }
+
+    &__logo {
+        margin-bottom: 40px;
+        max-width: 195px;
+    }
+
+    &__title {
+        position: relative;
+        color: $title;
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 51px;
+        margin-bottom: 17px;
+        padding-bottom: 17px;
+
+        &::after {
+            content: '';
+            position: absolute;
+            max-width: 252px;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            margin: 0 auto;
+            height: 1px;
+            background: #6D7278;
+        }
+    }
+
+    &__text {
+        margin-bottom: 75px;
+    }
+
+    &__images {
+        max-width: 485px;
+    }
+}

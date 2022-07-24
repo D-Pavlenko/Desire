@@ -1,0 +1,29 @@
+.partners {
+    padding: 16px 0 60px;
+
+    @media (max-width: $breakepoint_sm) {
+        padding: 16px 0 20px;
+    }
+
+    &__items {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+
+        @media (max-width: $breakepoint_md) {
+            grid-template-columns: repeat(3, 1fr);
+        }
+
+        @media (max-width: $breakepoint_sm) {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+
+    &__img {
+        max-height: 300px;
+        margin: 0 auto;
+
+        @media (max-width: $breakepoint_sm) {
+            max-height: 110px;
+        }
+    }
+}

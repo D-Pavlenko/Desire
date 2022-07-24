@@ -1,0 +1,134 @@
+.works-path {
+    padding: 80px 0 30px;
+
+    &__title {
+        @extend %title-font;
+        text-align: center;
+        color: $title;
+        margin-bottom: 40px;
+        font-size: 36px;
+        line-height: 51px;
+
+        @media (max-width:540px) {
+            font-size: 28px;
+            line-height: 36px;
+        }
+    }
+
+    &__items-box {
+        display: flex;
+        align-items: flex-end;
+        border-bottom: 2px solid rgba($title, .7);
+        position: relative;
+
+        @media (max-width: 650px) {
+            border: none;
+            display: block;
+        }
+
+        &::before {
+            content: '';
+            position: absolute;
+            bottom: -5px;
+            left: 0;
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            background-color: $title;
+
+            @media (max-width: 650px) {
+                display: none;
+            }
+        }
+    }
+
+    &__item {
+        width: 250px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        position: relative;
+        height: 100%;
+
+        @media (max-width: 840px) {
+            width: 350px;
+        }
+
+        @media (max-width: 650px) {
+            width: 100%;
+        }
+    }
+
+    &__item--production {
+        margin-left: 317px;
+
+        @media (max-width: 840px) {
+            margin-left: 50px;
+        }
+
+        @media (max-width: 650px) {
+            margin-left: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 2px;
+            height: 20px;
+            background-color: rgba($title, .7);
+
+            @media (max-width: 650px) {
+                display: none;
+            }
+        }
+    }
+
+    &__item--consultation,
+    &__item--production {
+        padding-bottom: 38px;
+    }
+
+    &__item--measurements {
+        padding-top: 38px;
+        margin-left: 305px;
+
+        @media (max-width: 840px) {
+            margin-left: 100px;
+        }
+
+        @media (max-width: 650px) {
+            margin-left: 0;
+            padding-top: 0;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 2px;
+            height: 20px;
+            background-color: rgba($title, .7);
+
+            @media (max-width: 650px) {
+                display: none;
+            }
+        }
+    }
+
+    &__item-img {
+        max-width: 40px;
+    }
+
+    &__item-title {
+        margin-left: 13px;
+        color: $title;
+        @extend %title-font;
+    }
+
+    &__item-text {
+        margin-top: 13px;
+    }
+}

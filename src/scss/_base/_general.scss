@@ -1,0 +1,151 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$title: #363838;
+$default: #5A5A5A;
+;
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  line-height: 27px;
+  font-weight: 400;
+  font-style: normal;
+  color: $default;
+  overflow-x: hidden;
+  min-width: 320px;
+}
+
+body.no-scroll {
+  overflow: hidden;
+}
+
+$breakepoint_xxl: 1200px;
+$breakepoint_xl: 1024px;
+$breakepoint_lg: 992px;
+$breakepoint_md: 768px;
+$breakepoint_sm: 540px;
+$breakepoint_xsm: 375px;
+
+.container {
+  max-width: 1140px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.container-fluid {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+i {
+  font-family: fontawesome;
+  font-style: normal;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  li {
+    margin: 0 15px;
+  }
+
+  button {
+    background-color: $title;
+    border: none;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    padding: 0;
+    font-size: 0;
+  }
+
+  li.slick-active {
+    button {
+      background-color: #FFEF35;
+    }
+  }
+}
+
+ul[class],
+ol[class] {
+  padding: 0;
+  margin: 0;
+}
+
+ul[class] {
+  list-style: none;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+  font-size: inherit;
+}
+
+::selection {
+  background-color: $default;
+  color: #FFFFFF;
+}
+
+%title-font {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+}
+
+.info-email {
+  position: relative;
+  font-weight: 600;
+  font-style: 14px;
+  color: $title;
+  margin-bottom: 22px;
+  padding-left: 30px;
+  display: inline-block;
+  transition: .3s ease-in-out;
+
+  &::before {
+    content: '';
+    background-image: url(../images/footer/envelope.svg);
+    left: 0;
+    top: 8px;
+    width: 16px;
+    height: 12px;
+    position: absolute;
+  }
+
+  &:hover {
+    opacity: .75;
+  }
+}

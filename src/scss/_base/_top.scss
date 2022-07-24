@@ -1,0 +1,105 @@
+.top {
+    &__inner {
+        padding-bottom: 70px;
+        position: relative;
+
+        @media (max-width: 650px) {
+            padding-top: 30px;
+            padding-bottom: 25px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            background-image: url(../images/top/slider-bg.jpg);
+            width: 100%;
+            height: 722px;
+            top: 0;
+            z-index: -1;
+
+            @media (max-width: 840px) {
+                height: 100%;
+            }
+        }
+    }
+
+    &__slider-item {
+        display: flex !important;
+        justify-content: center;
+        align-items: center;
+
+        @media (max-width: 650px) {
+            .top__slider-img {
+                display: none;
+            }
+        }
+    }
+
+    &__slider-img {
+        max-width: 703px;
+        width: 100%;
+        margin-left: -14%;
+        height: 815px;
+        object-fit: cover;
+
+        @media (max-width: $breakepoint_xxl) {
+            height: 640px;
+        }
+
+        @media (max-width: 840px) {
+            height: 540px;
+        }
+
+        @media (max-width: 650px) {
+            display: none;
+        }
+    }
+
+    &__slider-info {
+        max-width: 645px;
+        margin-left: 25px;
+    }
+
+    &__slider-title {
+        @extend %title-font;
+        color: $title;
+        font-weight: 700;
+        font-size: 110px;
+        line-height: 134px;
+        padding-bottom: 26px;
+        margin-bottom: 26px;
+        position: relative;
+
+        @media (max-width: $breakepoint_xxl) {
+            font-size: 62px;
+            line-height: 74px;
+        }
+
+        @media (max-width: 840px) {
+            font-size: 44px;
+            line-height: 54px;
+        }
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 185px;
+            height: 1px;
+            background: #6D7278;
+        }
+    }
+
+    &__slider-text {
+        max-width: 585px;
+
+        @media (max-width: $breakepoint_xxl) {
+            margin-right: 15px;
+        }
+
+        @media (max-width: 650px) {
+            margin-bottom: 15px;
+        }
+    }
+}

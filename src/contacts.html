@@ -1,0 +1,332 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/x-icon" href="/images/header/favicon.png">
+    <title>Furniture collection</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css" />
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="./css/index.min.css">
+</head>
+
+<body>
+    <div class="wrapper">
+        {% include "templates/_base/_header.html" %}
+
+        <main class="main">
+            <div class="breadcrums">
+                <div class="container">
+                    <ul class="breadcrums__list">
+                        <li class="breadcrums__item">
+                            <a class="breadcrums__link" href="index.html">Home</a>
+                        </li>
+
+                        <li class="breadcrums__item">
+                            <a class="breadcrums__link" href="#">Gallery</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="map">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d14997.331053395106!2d-122.44047778895813!3d37.79471534549598!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808580f18d8c6ea7%3A0x5d7f53fb70a3a903!2zNzI1IEdyZWVuIFN0LCBTYW4gRnJhbmNpc2NvLCBDQSA5NDEzMywg0KHQqNCQ!5e0!3m2!1sru!2sua!4v1657918500998!5m2!1sru!2sua"
+                    width="100% style=" border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <section class="contact">
+                <div class="container">
+                    <h3 class="contact__title">
+                        Contact Us
+                    </h3>
+
+                    <ul class="contact__social">
+                        <li class="contact__social-item">
+                            <a class="contact__social__link" href="#">
+                                <img class="contact__social-img" src="images/footer/facebook.svg" alt="facebook">
+                            </a>
+                        </li>
+                        <li class="contact__social-item">
+                            <a class="contact__social__link" href="#">
+                                <img class="contact__social-img" src="images/footer/instagram.svg" alt="instagram">
+                            </a>
+                        </li>
+                        <li class="contact__social-item">
+                            <a class="contact__social__link" href="#">
+                                <img class="contact__social-img" src="images/footer/pinterest.svg" alt="pinterest">
+                            </a>
+                        </li>
+                        <li class="contact__social-item">
+                            <a class="contact__social__link" href="#">
+                                <img class="contact__social-img" src="images/footer/whatsapp.svg" alt="whatsapp">
+                            </a>
+                        </li>
+                        <li class="contact__social-item">
+                            <a class="contact__social__link" href="#">
+                                <img class="contact__social-img" src="images/footer/youtube.svg" alt="youtube">
+                            </a>
+                        </li>
+                    </ul>
+
+                    <div class="contact__box">
+                        <p class="contact__text">
+                            Vexillologist vape microdosing freegan pork belly deep v direct trade cray single-origin
+                            coffee street art. Viral shaman mustache master cleanse, pour-over affogato poutine copper
+                            mug marfa fanny pack normcore. Lo-fi pop-up banjo portland, echo park hammock
+                        </p>
+
+                        <a class="contact__phone" href="tel:+14158297934">(415) 829-7934</a>
+
+                        <div class="contact__st">725 Green St</div>
+
+                        <div class="contact__city"> San Francisco, California(CA), 94133</div>
+
+                        <a class="info-email" href="mailto:ouremailaddress@email.com">
+                            ouremailaddress@email.com
+                        </a>
+                    </div>
+
+                    <form class="contact__form">
+                        <input class="contact__form-input" placeholder="Your name" type="text">
+                        <input class="contact__form-input" placeholder="Your e-mail" type="email">
+                        <textarea class="contact__form-area" placeholder="Your message"></textarea>
+                        <button class="contact__form-btn" type="submit">Send</button>
+                    </form>
+                </div>
+            </section>
+
+            <div class="container-fluid">
+                <div class="contact-slider">
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider1.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider2.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider3.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider4.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider5.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider6.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider7.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider8.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider9.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider10.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider1.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider2.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider3.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider4.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider5.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider6.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider7.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider8.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider9.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider10.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider1.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider2.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider3.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider4.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider5.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider6.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider7.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider8.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider9.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+
+                    <a class="contact-slider__link" href="#">
+                        <img class="contact-slider__img" src="images/contact-slider/contact-slider10.jpg" alt="image">
+                        <p class="contact-slider__title">
+                            Truffaut literally trust
+                        </p>
+                    </a>
+                </div>
+            </div>
+        </main>
+
+        {% include "templates/_base/_footer.html" %}
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+
+    <script src="./js/index.min.js"></script>
+</body>
+
+</html>
